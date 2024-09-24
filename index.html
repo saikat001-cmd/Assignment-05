@@ -24,7 +24,7 @@
     }
   </script>
     <style>
-     .lexend-font {
+     .lexend-font{
         font-family: "Lexend", sans-serif; 
      }
     </style>
@@ -42,19 +42,85 @@
                 </div>
                 <div class=" gap-2 ">
                     <img class=" w-7" src="assets/coin.png" alt="">
-                     <a class="text-sm lg:text-2xl">5500 BDT</a>
+                     <a id="account-bdt" class="text-sm lg:text-2xl">10000 BDT</a>
                 </div>
               
               </div>          
         </nav>
-        <div class="flex justify-center mt-7 gap-6">
-            <button id="donet" class=" btn px-10 bg-background py-4 font-semibold  ">Donation</button>
-            <button id="history-tab" class="btn btn px-11 py-4  font-semibold">History</button>
-            
-        </div>
+        <div class="flex justify-center mt-16 gap-6">    
+          <!-- <div id="cc">
 
-      
+            <button id="btn-donation " class=" btn px-10 bg-background py-4 font-semibold" >Donation</button> 
+          </div>
+          <div id="dd">
+            <button id="tab-history" class="btn btn px-11 py-4 font-semibold" >History</button>      
+
+          </div> -->
+            <button id="btn-donation" class="btn px-10 bg-background py-4 font-semibold focus:outline-none transition-colors">Donation</button> 
+            <button id="tab-history" class="btn px-11 py-4 font-semibold focus:outline-none transition-colors">History</button>      
+
+        </div>
     </header>
+    <main class="mt-16">
+        <div  class="hero bg-base-100 w-10/12 mx-auto">
+            <div class="hero-content flex-col lg:flex-row shadow-lg">
+              <img class="lg:w-2/2 w-96"
+                src="assets/noakhali.png"
+                class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+               <button class="flex gap-2 px-2 py-1 bg-slate-200 rounded-md ">
+                <img class="w-6" src="assets/coin.png" alt="">
+                <a id="account-balance">0 BDT</a>
+               </button>
+                <h1 class="text-2xl font-bold mt-4">Donate for Flood at Noakhali, Bangladesh</h1>
+                <p class="py-6">
+                    The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                </p>
+                <input id="input-add-money" placeholder="Write Donation Amount" class="input input-bordered lg:w-4/5 w-72 "autocomplete="off" required />
+                <button id="btn-add-donate" class="btn btn-primary lg:w-4/5 w-72 mt-4">Donate Now</button>
+              </div>
+            </div>
+          </div>
+        <div class="hero bg-base-100 w-10/12 mx-auto mt-10">
+            <div class="hero-content flex-col lg:flex-row shadow-lg">
+              <img class="lg:w-2/2 w-96"
+                src="assets/feni.png"
+                class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+               <button class="flex gap-2 px-2 py-1 bg-slate-200 rounded-md ">
+                <img class="w-6" src="assets/coin.png" alt="">
+                <p id="account-balance-2">0 BDT</p>
+               </button>
+                <h1 class="text-2xl font-bold mt-4">Donate for Flood at Noakhali, Bangladesh</h1>
+                <p class="py-6">
+                    The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                </p>
+                <input id="input-add-money-2"  placeholder="Write Donation Amount" class="input input-bordered lg:w-4/5 w-72 "autocomplete="off" required />
+                <button id="btn-add-donate-2"  class="btn btn-primary lg:w-4/5 w-72 mt-4">Donate Now</button>
+              </div>
+            </div>
+          </div>
+        <div class="hero bg-base-100 w-10/12 mx-auto mt-10">
+            <div class="hero-content flex-col lg:flex-row shadow-lg">
+              <img class="lg:w-2/2 w-96"
+                src="assets/quota-protest.png"
+                class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+               <button class="flex gap-2 px-2 py-1 bg-slate-200 rounded-md ">
+                <img class="w-6" src="assets/coin.png" alt="">
+                <p id="account-balance-3">0 BDT</p>
+               </button>
+                <h1 class="text-2xl font-bold mt-4">Donate for Flood at Noakhali, Bangladesh</h1>
+                <p class="py-6">
+                    The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                </p>
+                <input  id="input-add-money-3" placeholder="Write Donation Amount" class="input input-bordered lg:w-4/5 w-72 "autocomplete="off" required />
+                <button id="btn-add-donate-3" class="btn btn-primary lg:w-4/5 mt-4 w-72">Donate Now</button>
+              </div>
+            </div>
+          </div>
+    </main>
     <script src="js/donet.js"></script>
+    <script src="js/js.js"></script>
 </body>
 </html>
