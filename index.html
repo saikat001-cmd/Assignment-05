@@ -34,7 +34,7 @@
         <nav class="bg-orange-50  ">
             <div class="navbar justify-around ">
                 <div>
-                    <button id="blog" class="btn bg-background text-sm lg:text-2xl font-semibold">Blog</button>
+                    <button id="blog" class="btn bg-background text-sm lg:text-2xl  font-semibold">Blog</button>
                   </div>
                 <div class=" gap-2">             
                     <img class="w-6 lg:w-12" src="assets/logo.png" alt="">
@@ -48,16 +48,16 @@
               </div>          
         </nav>
       <section class="static top-0 ">
-        <div class="flex justify-center pt-10 bg-slate-50 gap-6  ">    
+        <div class="flex justify-center pt-10 backdrop-blur-sm opacity-90 gap-6  ">    
           <button id="btn-donation" class="btn px-10 bg-background py-4 font-semibold focus:outline-none transition-colors">Donation</button> 
-          <button id="tab-history" class=" btn bg-background px-11 py-4 font-semibold focus:outline-none transition-colors">History</button>      
+          <button id="tab-history" class=" btn bg-background  px-11 py-4 font-semibold focus:outline-none transition-colors">History</button>      
 
       </div>
       </section>
     </header>
 
-    <main id="button_main" class="Z-index " >
-        <div  class="hero bg-base-100 w-10/12 mx-auto mt-16">
+    <main id="button-main" >
+        <div  class="hero bg-base-100 w-11/12 mx-auto mt-16">
             <div class="hero-content flex-col lg:flex-row shadow-lg">
               <img class="lg:w-2/2 w-96"
                 src="assets/noakhali.png"
@@ -76,7 +76,7 @@
               </div>
             </div>
           </div>
-        <div class="hero bg-base-100 w-10/12 mx-auto mt-10">
+        <div class="hero bg-base-100 w-11/12 mx-auto mt-10">
             <div class="hero-content flex-col lg:flex-row shadow-lg">
               <img class="lg:w-2/2 w-96"
                 src="assets/feni.png"
@@ -95,7 +95,7 @@
               </div>
             </div>
           </div>
-        <div class="hero bg-base-100 w-10/12 mx-auto mt-10">
+        <div class="hero bg-base-100 w-11/12 mx-auto mt-10">
             <div class="hero-content flex-col lg:flex-row shadow-lg">
               <img class="lg:w-2/2 w-96"
                 src="assets/quota-protest.png"
@@ -113,14 +113,36 @@
                 <button id="btn-add-donate-3" class="btn btn-primary lg:w-4/5 mt-4 w-72">Donate Now</button>
               </div>
             </div>
-          </div>
-
-         
+          </div>     
     </main>
-
-    <section id="history_section" class=" hidden">
+   
+    <section id="history-section" class=" hidden">
       
     </section>
+
+    <section class="text-center">
+      <!-- Open the modal using ID.showModal() method -->
+ <button class="btn hidden" onclick="my_modal_1.showModal()">open modal</button>
+ <dialog id="my_modal_1" class="modal">
+   <div class="modal-box">
+     <h3 class="text-lg font-bold">Congrates!</h3>
+     <img class="mx-auto" src="assets/coin.png" alt="">
+     <p class="py-4">You Have Donated for Humankind</p>
+     <h3 class="text-lg font-bold">Successfully</h3>
+     <div class="modal-action">
+       <form method="dialog">
+         <!-- if there is a button in form, it will close the modal -->
+         <button class="btn btn-wide">Close confirmation</button>
+       </form>
+     </div>
+   </div>
+ </dialog>
+     </section>
+
+
+
+
+    
     <script src="js/donet.js"></script>
     <script src="js/js.js"></script>
     <script>

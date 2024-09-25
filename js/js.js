@@ -1,11 +1,4 @@
 
-// function showSectionById(id){
-//     document.getElementById('section').classList.add('hidden');
-//     document.getElementById('tab-history').classList.add('hidden');
-//     document.getElementById(id).classList.remove('hidden');
-// }
-
-
 // card-function
 function getInputFieldValueById(id){
     const inputValue = document.getElementById(id).value;
@@ -26,8 +19,8 @@ function getNumberFieldValueById(id){
 
 function historyBtn(id){
         
-        document.getElementById('button_main').classList.add('hidden');
-        document.getElementById('history_section').classList.add('hidden');
+        document.getElementById('button-main').classList.add('hidden');
+        document.getElementById('history-section').classList.add('hidden');
         document.getElementById(id).classList.remove('hidden');
        
 }
@@ -46,7 +39,7 @@ function moneyNotification(Tk, NAME){
     `
     
           
-  document.getElementById('history_section').appendChild(div);
+  document.getElementById('history-section').appendChild(div);
   
   }
 
