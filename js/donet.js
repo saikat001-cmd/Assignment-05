@@ -1,44 +1,27 @@
-// function Button (id){
-//     document.getElementById('main').classList.add('hidden');
-//     document.getElementById('history').classList.add('hidden');
-//     document.getElementById('id').classList.remove('hidden');
 
-// }
+document.getElementById('tab-history').style.backgroundColor='transparent';
 
-// document.getElementById("dd").style.backgroundColor = "transparent";
-// function bgColor(id){
-//     document.getElementById("cc").style.backgroundColor = "transparent";
-//     document.getElementById("dd").style.backgroundColor = "transparent";
-//     document.getElementById(id).style.backgroundColor='';
-// }
+document.getElementById('btn-donation').addEventListener('click',function(){
+    document.getElementById('btn-donation').style.backgroundColor='transparent';
+    document.getElementById('tab-history').style.backgroundColor='transparent';
+    document.getElementById('btn-donation').style.backgroundColor="";
 
-// document.getElementById('btn-donation').addEventListener('click',function(){
-//     Button('main');
-//     bgColor('cc');
-// })
-// document.getElementById('btn-donation').addEventListener('click',function(){
-//     Button('tab-history');
-//     bgColor('dd');
-// })
+    historyBtn('button_main');
+})
 
 
-// const historyTab = document.getElementById('tab-history');
-// const btnDonation = document.getElementById('btn-donation');
-// historyTab.addEventListener("click", function (){
-//     historyTab.classList.add("bg-background");
-//     btnDonation.classList.remove("bg-background");  
-// });
-//     btnDonation.addEventListener("click", function (){
-//     btnDonation.classList.remove("bg-background");  
-// });
-
+document.getElementById('tab-history').addEventListener('click',function(){
+    document.getElementById('btn-donation').style.backgroundColor='transparent';
+    document.getElementById('tab-history').style.backgroundColor='transparent';
+    document.getElementById('tab-history').style.backgroundColor="";
+    historyBtn('history_section');
+})
 
 
 // part-1
 document.getElementById('btn-add-donate').addEventListener('click',function(){  
     const addMoney = getInputFieldValueById('input-add-money');
     const mainMain = getNumberFieldValueById('account-bdt');
-    console.log(addMoney);
     if(isNaN(addMoney)){
         alert('Failed to add money');
         return;
@@ -51,15 +34,16 @@ const accountBalance=getTextFieldValueById('account-balance');
 const newBalance=accountBalance+addMoney;
 document.getElementById('account-balance').innerText=newBalance;
 const balance=mainMain-addMoney;
-document.getElementById('account-bdt').innerText=balance;
-history();
+document.getElementById('account-bdt').innerText=balance; 
+const donateFood = document.getElementById('donate-food')
+
+moneyNotification(addMoney, donateFood);
 })
 
 // part-2
 document.getElementById('btn-add-donate-2').addEventListener('click',function(){  
     const addMoney = getInputFieldValueById('input-add-money-2');
     const mainMain = getNumberFieldValueById('account-bdt');
-    console.log(addMoney);
     if(isNaN(addMoney)){
         alert('Failed to add money');
         return;
@@ -73,13 +57,14 @@ const newBalance=accountBalance+addMoney;
 document.getElementById('account-balance-2').innerText=newBalance;
 const balance=mainMain-addMoney;
 document.getElementById('account-bdt').innerText=balance;
-history();
+const donateFood2 = document.getElementById('donate-food-2')
+moneyNotification(addMoney, donateFood2);
+
 })
 // part-3
 document.getElementById('btn-add-donate-3').addEventListener('click',function(){  
     const addMoney = getInputFieldValueById('input-add-money-3');
     const mainMain = getNumberFieldValueById('account-bdt');
-    console.log(addMoney);
     if(isNaN(addMoney)){
         alert('Failed to add money');
         return;
@@ -93,7 +78,9 @@ const newBalance=accountBalance+addMoney;
 document.getElementById('account-balance-3').innerText=newBalance;
 const balance=mainMain-addMoney;
 document.getElementById('account-bdt').innerText=balance;
-history();
+const donateFood3 = document.getElementById('donate-food-3')
+moneyNotification(addMoney, donateFood3);
+
 })
   
 

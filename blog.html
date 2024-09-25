@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title> 
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'button-primary': '#ABEF5F',
+            'button-primary-2': '#ABEF5F80',
+            'background': '#B4F461',     
+          
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .lexend-font{
+       font-family: "Lexend", sans-serif; 
+    }
+   </style>
+</head>
+<body class="lexend-font">
+    <header >
+        <nav class="bg-orange-50 ">
+            <div class="navbar justify-around ">
+                <div>
+                    <button id="home" class="btn bg-background text-sm lg:text-2xl font-semibold">Home</button>
+                  </div>
+                <div class=" gap-2">             
+                    <img class="w-6 lg:w-12" src="assets/logo.png" alt="">
+                    <p class=" text-sm lg:text-2xl ">Donate Bangladesh</p>
+                </div>
+                <div class=" gap-2 ">
+                    <img class=" w-7" src="assets/coin.png" alt="">
+                     <a id="account-bdt" class="text-sm lg:text-2xl">10000 BDT</a>
+                </div>
+              
+              </div>          
+        </nav>
+        <div class="px-14 mt-16">
+            <h1 class="font-semibold text-4xl">Important FAQ</h1>
+        </div>
+       <div class="w-11/12 mx-auto mt-8 bg-neutral-300">
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl  font-bold">What is the Document Object Model(DOM)?</div>
+              <div class="collapse-content">
+                <p>The document object model dom is a programming interface for web documents.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-bold">How do you select an element from the DOM?</div>
+              <div class="collapse-content">
+                <p> The select  element provides methods that make it quick and easy to retrieve Element nodes from the DOM by matching against a set of selectors.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-bold">What is event delegation in the context of the DOM, and why is it useful?</div>
+              <div class="collapse-content">
+                <p>Event delegation is a technique in JavaScript that allows you to manage events efficiently by taking advantage of the DOM's event bubbling.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-bold">How do you manipulate an element's attributes and styles using the DOM?</div>
+              <div class="collapse-content">
+                <p>Manipulating an element's attributes and styles using the DOM is a common task in web development. </p>
+              </div>
+            </div>
+          </div>
+       </div>
+    </header>
+   <script>
+    document.getElementById('home').addEventListener('click',function(){
+    window.location.href="./index.html"
+})
+   </script>
+</body>
+</html>
